@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link link href="css.css" rel="stylesheet">
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form" class="form">
+            <h2>Faça seu cadastro</h2>
+            <div class="form-fields">
+                <label for="username">Seu Usuário</label>
+                <input type="text" name="username" class="username" id="username" placeholder="Seu Usuário">
+                <span class="error-message">Campo inválido por algum motivo</span>
+            </div>
+            <div class="form-fields">
+                <label for="email">Seu E-mail</label>
+                <input type="text" name="email" class="email" id="email" placeholder="Seu E-mail">
+                <span class="error-message">Campo inválido por algum motivo</span>
+            </div>
+            <div class="form-fields">
+                <label for="password">Sua Senha</label>
+                <input type="password" name="password" class="password" id="password" placeholder="Sua Senha">
+                <span class="error-message">Campo inválido por algum motivo</span>
+            </div>
+            <div class="form-fields">
+                <label for="password">Repitir Senha</label>
+                <input type="password" name="password2" class="password2" id="password2" placeholder="Repitir Senha">
+                <span class="error-message">Campo inválido por algum motivo</span>
+            </div>
+            <div class="form-fields text-center" >
+                <button href='#myModal' type="submit" data-toggle="modal">Enviar</button>
+            </div>
+        </form>
+    </div>        
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>				
+                    <h4 class="modal-title">Sucesso!</h4>	
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-toggle="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>      
+
+        
+     <script src="/dist/init.js"></script>
+</body>
+</html>

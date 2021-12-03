@@ -1,0 +1,183 @@
+:root {
+    --dark-color: #111;
+    --light-color: #f3f3f3;
+    --medium-color: #bbb;
+    --border-color: #ddd;
+    --main-color: #0074D9;
+    --error-color: #ff4136;
+    --border-radius: 4px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-color);
+    font-family: sans-serif;
+    color: var(--dark-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.form {
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 5px rgba (0, 0, 0, .2);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    margin: auto 20px;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.form-fields {
+    margin: 0 0 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 10pt;
+    color: #999;
+}
+
+::placeholder {
+    color: #ddd;
+    font-size: 10pt;
+}
+
+.form input[type] {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    transition: border 300ms ease-in-out;
+}
+
+.form input [type]:focus {
+    border-color: var(--medium-color);
+}
+
+.form button {
+    border: none;
+    background: var(--main-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--light-color);
+    border-radius: var(--border-radius);
+    transition: filter 300ms ease-in-out;
+    width: 70%;
+}
+
+
+.form button:hover {
+    filter: brightness(80%);
+}
+
+
+
+.form .error-message {
+    font-size: 9pt;
+    padding: 5px 0;
+    color: var(--error-color);
+    font-style: italic;
+    display: none;
+}
+
+.form .show-error-message .error-message {
+    display: block;
+}
+
+.form .show-error-message input [type] {
+    border-color: var(--border-color);
+}
+	.modal-confirm {		
+		color: #636363;
+		width: 325px;
+		margin: 30px auto;
+	}
+	.modal-confirm .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-confirm .modal-header {
+		border-bottom: none;   
+        position: relative;
+	}
+	.modal-confirm h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -15px;
+	}
+	.modal-confirm .form-control, .modal-confirm .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+	}
+	.modal-confirm .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}	
+	.modal-confirm .modal-footer {
+		border: none;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 13px;
+	}	
+	.modal-confirm .icon-box {
+		color: #fff;		
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+		z-index: 9;
+		background: var(--main-color);
+		padding: 15px;
+		text-align: center;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.modal-confirm .icon-box i {
+		font-size: 58px;
+		position: relative;
+		top: 3px;
+	}
+	.modal-confirm.modal-dialog {
+		margin-top: 80px;
+	}
+    .modal-confirm .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: var(--main-color);
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+	.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+        filter: brightness(80%);
+		outline: none;
+	}
+	.trigger-btn {
+		display: inline-block;
+		margin: 100px auto;
+	}

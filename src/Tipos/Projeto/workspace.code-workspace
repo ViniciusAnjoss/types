@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "TypeScript",
+			"path": "..\\.."
+		},
+		{
+			"name": "TypeScript",
+			"path": "..\\..\\..\\TypeScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TypeScript"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+
+			{
+				"type": "pwa-chrome",
+				"request": "launch",
+				"name": "Open cadastro.html",
+				"file": "c:\\Users\\viniciuss\\Desktop\\Grande porte\\TypeScript\\formulario.html"
+			}
+		]
+	}
+}
